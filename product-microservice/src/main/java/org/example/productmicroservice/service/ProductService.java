@@ -20,9 +20,7 @@ public class ProductService {
 
     //--- asynchronous method
     public String createProduct(CreateProductDto product) {
-
         // simulation of create product on db
-
         String productId = UUID.randomUUID().toString();
         ProductCreatedEvent event =
                 new ProductCreatedEvent(
@@ -49,9 +47,7 @@ public class ProductService {
 
     //--- synchronous method
     public String createProduct2(CreateProductDto product) {
-
         // simulation of create product on db
-
         String productId = UUID.randomUUID().toString();
         ProductCreatedEvent event =
                 new ProductCreatedEvent(

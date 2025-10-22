@@ -1,4 +1,4 @@
-package org.example.core;
+package org.example.emailnotificationmicroservice.handler;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
