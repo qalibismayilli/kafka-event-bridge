@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d12ce677-fe3a-447f-9cc6-8e85b9caa2b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/email-notification-microservice/src/main/java/org/example/emailnotificationmicroservice/handler/ProductCreatedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/org/example/core/ProductCreatedEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-notification-microservice/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/email-notification-microservice/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-notification-microservice/src/main/java/org/example/emailnotificationmicroservice/handler/ProductCreatedEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-notification-microservice/src/main/java/org/example/emailnotificationmicroservice/handler/ProductCreatedEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-notification-microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/email-notification-microservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-microservice/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product-microservice/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-microservice/src/main/java/org/example/productmicroservice/config/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-microservice/src/main/java/org/example/productmicroservice/config/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-microservice/src/main/java/org/example/productmicroservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-microservice/src/main/java/org/example/productmicroservice/service/ProductService.java" afterDir="false" />
-    </list>
+    <list default="true" id="d12ce677-fe3a-447f-9cc6-8e85b9caa2b8" name="Changes" comment="some changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,11 +149,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761142394354</updated>
-      <workItem from="1761142395529" duration="5667000" />
+      <workItem from="1761142395529" duration="6053000" />
     </task>
+    <task id="LOCAL-00001" summary="some changes">
+      <option name="closed" value="true" />
+      <created>1761150197250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761150197250</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
 </project>
