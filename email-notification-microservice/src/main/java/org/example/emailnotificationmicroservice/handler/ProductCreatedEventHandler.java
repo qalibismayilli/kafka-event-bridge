@@ -26,7 +26,8 @@ public class ProductCreatedEventHandler {
     public void handle(ProductCreatedEvent event) {
         LOGGER.info("Received a new event:" + event.getTitle());
 
-        String requestUrl = "http://localhost:8082";
+        String requestUrl = "http://localhost:8082/response/200";
+//        String requestUrl = "http://localhost:8082/response/500";
 
         try {
             ResponseEntity<String> response =
