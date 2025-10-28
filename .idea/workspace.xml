@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d12ce677-fe3a-447f-9cc6-8e85b9caa2b8" name="Changes" comment="some changes">
-      <change beforePath="$PROJECT_DIR$/email-notification-microservice/src/main/java/org/example/emailnotificationmicroservice/handler/ProductCreatedEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/email-notification-microservice/src/main/java/org/example/emailnotificationmicroservice/handler/ProductCreatedEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +14,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/email-notification-microservice">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/mock-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/product-microservice">
@@ -122,6 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MockServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="mock-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.mockservice.MockServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="product-microservice.main" />
@@ -157,7 +167,7 @@
       <workItem from="1761416295063" duration="4281000" />
       <workItem from="1761485439353" duration="3148000" />
       <workItem from="1761502218516" duration="2285000" />
-      <workItem from="1761560238161" duration="9011000" />
+      <workItem from="1761560238161" duration="11526000" />
     </task>
     <task id="LOCAL-00001" summary="some changes">
       <option name="closed" value="true" />
@@ -231,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761658305580</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="some changes">
+      <option name="closed" value="true" />
+      <created>1761658366514</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761658366514</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
