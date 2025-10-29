@@ -32,6 +32,10 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.kafka:spring-kafka-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    runtimeOnly 'org.postgresql:postgresql'
+    implementation("org.postgresql:postgresql:42.7.8")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:4.0.0-RC1")
 }
 
 tasks.named('test') {

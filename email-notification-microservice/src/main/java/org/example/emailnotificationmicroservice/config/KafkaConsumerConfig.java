@@ -35,7 +35,7 @@ public class KafkaConsumerConfig {
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ErrorHandlingDeserializer.class);
         config.put(ErrorHandlingDeserializer.VALUE_DESERIALIZER_CLASS, JsonDeserializer.class);
-        config.put(ConsumerConfig.GROUP_ID_CONFIG, env.getProperty("spring.kafka.consumer.group-id"));
+        config.put(ConsumerConfig.GROUP_ID_CONFIG, env.getProperty("consumer.group-id"));
         config.put(JsonDeserializer.TRUSTED_PACKAGES, env.getProperty("spring.kafka.consumer.properties.spring.json.trusted.packages"));
         config.put(JsonDeserializer.VALUE_DEFAULT_TYPE, ProductCreatedEvent.class);
         config.put(JsonDeserializer.USE_TYPE_INFO_HEADERS, env.getProperty("spring.kafka.consumer.properties.spring.json.use.type.headers"));

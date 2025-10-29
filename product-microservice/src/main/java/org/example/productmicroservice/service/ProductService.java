@@ -1,6 +1,7 @@
 package org.example.productmicroservice.service;
 
 import lombok.RequiredArgsConstructor;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.example.productmicroservice.dto.CreateProductDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,14 +27,16 @@ public class ProductService {
                 new ProductCreatedEvent(
                         productId, product.getTitle(), product.getPrice(), product.getQuantity()
                 );
-
+        ProducerRecord<String, ProductCreatedEvent> record =
+                new ProducerRecord<>("product-created-events-topic", productId, event);
+        record.headers().add("messageId", UUID.randomUUID().toString().getBytes());
         CompletableFuture<SendResult<String, ProductCreatedEvent>> future =
-                kafkaTemplate.send("product-created-events-topic",productId, event);
+                kafkaTemplate.send(record);
 
         future.whenComplete((result, exception) -> {
             if (exception != null) {
                 LOGGER.error("********* Failed to sent message" + exception.getMessage(), exception);
-            }else{
+            } else {
                 LOGGER.info("********* Successfully sent message" + result.getRecordMetadata());
             }
         });
@@ -41,7 +44,6 @@ public class ProductService {
         //future.join(); --- this code make synchronous
 
         LOGGER.info("********* Returning product id");
-
         return productId;
     }
 
@@ -53,12 +55,8 @@ public class ProductService {
                 new ProductCreatedEvent(
                         productId, product.getTitle(), product.getPrice(), product.getQuantity()
                 );
-        CompletableFuture<SendResult<String, ProductCreatedEvent>> future =
-                kafkaTemplate.send("product-created-events-topic",productId, event);
-
         SendResult<String, ProductCreatedEvent> result =
-                kafkaTemplate.send("product-created-events-topic",productId, event).join();
-
+                kafkaTemplate.send("product-created-events-topic", productId, event).join();
         LOGGER.info("********* Returning product id");
 
         return productId;
