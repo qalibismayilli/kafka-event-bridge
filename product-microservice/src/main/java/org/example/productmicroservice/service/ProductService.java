@@ -29,7 +29,7 @@ public class ProductService {
                 );
         ProducerRecord<String, ProductCreatedEvent> record =
                 new ProducerRecord<>("product-created-events-topic", productId, event);
-        record.headers().add("messageId", UUID.randomUUID().toString().getBytes());
+        record.headers().add("messageId", "123".getBytes());
         CompletableFuture<SendResult<String, ProductCreatedEvent>> future =
                 kafkaTemplate.send(record);
 
